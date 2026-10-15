@@ -73,8 +73,19 @@ fun FormDataDiri(modifier: Modifier) {
                 alamat=textAlamat
             }
 
+        ) {
+            Text(stringResource("Submit"))
+        }
+        Divider(
+            modifier = Modifier.padding(bottom =
+                dimensionResource(id=R.dimen.padding_medium), top = dimensionResource(
+                id = R.dimen.padding_medium
+            )),
 
+            thickness = dimensionResource(1dp)
+                    color = Color.DarkGray
         )
+
 
 
 
