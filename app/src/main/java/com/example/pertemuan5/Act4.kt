@@ -27,6 +27,23 @@ fun FormDataDiri(modifier: Modifier) {
             }
             // ... (lanjutan properti di foto terpotong)
         )
+        Row {
+            gender.forEach { item ->
+                Row(modifier = Modifier.selectable(
+                    selected = textJK == item,
+                    onClick = { textJK = item }
+                ), verticalAlignment = Alignment.CenterVertically) {
+                    RadioButton(
+                        selected = textJK == item,
+                        onclick = {
+                            textJK = item
+
+                        })
+                    Text(item)
+                }
+            }
+        }
+
 
     }
     }
