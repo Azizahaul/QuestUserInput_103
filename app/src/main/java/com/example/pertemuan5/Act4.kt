@@ -20,6 +20,11 @@ fun FormDataDiri(modifier: Modifier) {
             onValueChange = { textNama = it },
             singleLine = true,
             shape = MaterialTheme.shapes.large,
+            modifier = Modifier.width(250.dp),
+            label = { Text(text = "Nama Lengkap") }
+            on ValueChalenge = {
+                textNama = it
+            }
             // ... (lanjutan properti di foto terpotong)
         )
 
